@@ -11,9 +11,10 @@ React, TypeScript e Vite.
 - `/a1`
 - `/a2`
 - `/a3`
+- `/a4`
 - `/obrigado`
 
-As três páginas de vendas compartilham estrutura, conteúdo e componentes. Somente a comunicação principal do topo varia entre elas.
+As quatro páginas de vendas compartilham estrutura, conteúdo e componentes. Somente a comunicação principal do topo varia entre elas.
 
 ## Execução local
 

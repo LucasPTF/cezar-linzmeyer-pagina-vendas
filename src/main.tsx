@@ -2,7 +2,7 @@ import { StrictMode, type ReactNode } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
 
-type HeroKey = "a1" | "a2" | "a3";
+type HeroKey = "a1" | "a2" | "a3" | "a4";
 
 type HeroContent = {
   headline: string;
@@ -33,6 +33,13 @@ const heroContent: Record<HeroKey, HeroContent> = {
     subheadline:
       "Workshop Raio-X do Ciclo Financeiro. Ao vivo pelo Zoom, com o método Engrenagem da Repetição. Sua origem explica parte da sua trajetória. Ela não precisa determinar o seu destino. Com Cezar Linzmeyer.",
     cta: "Quero separar origem de destino",
+  },
+  a4: {
+    headline:
+      "Te ensinaram que dinheiro é questão de conta e de disciplina. Em 3 horas, você vai mapear a sequência que faz a conta certa produzir, ano após ano, o mesmo resultado errado.",
+    subheadline:
+      "Workshop Raio-X do Ciclo Financeiro. O método Engrenagem da Repetição parte de uma pergunta que quase ninguém faz: de onde vem aquilo que você acredita querer, e como você funciona pra decidir. Construído sobre psicanálise e tipologia junguiana, aplicado à vida financeira.",
+    cta: "Quero testar essa tese na minha vida",
   },
 };
 
@@ -667,7 +674,8 @@ function App() {
     return <ThankYouPage />;
   }
 
-  const variant: HeroKey = route === "a2" || route === "a3" ? route : "a1";
+  const variant: HeroKey =
+    route === "a2" || route === "a3" || route === "a4" ? route : "a1";
   return <SalesPage variant={variant} />;
 }
 
