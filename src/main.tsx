@@ -14,31 +14,27 @@ const CHECKOUT_URL = "";
 
 const heroContent: Record<HeroKey, HeroContent> = {
   a1: {
-    headline:
-      "Se você trabalha muito e mesmo assim o dinheiro não sobra: em 3 horas, num sábado de manhã, você vai mapear a engrenagem que te devolve no mesmo ponto todo ano, e sair com o primeiro movimento definido.",
+    headline: "Trabalha muito, mas o dinheiro não sobra?",
     subheadline:
-      "Workshop Raio-X do Ciclo Financeiro. Ao vivo, pelo Zoom, com o método Engrenagem da Repetição e um material na sua mão pra fazer o diagnóstico durante a aula. Com Cezar Linzmeyer, que estuda psicanálise e comportamento aplicados à vida financeira.",
+      "Em 3 horas, num sábado de manhã, você vai mapear a engrenagem que te devolve no mesmo ponto todo ano e sair com o primeiro movimento definido. Workshop Raio-X do Ciclo Financeiro, ao vivo pelo Zoom, com material de diagnóstico e o método Engrenagem da Repetição.",
     cta: "Quero entender meu ciclo financeiro",
   },
   a2: {
-    headline:
-      "Se você tem entre 35 e 45 e trabalha por conta: em 3 horas você aplica uma estrutura de 6 etapas sobre uma situação real da sua vida financeira, e sai com um padrão identificado e um comportamento definido pra observar.",
+    headline: "Em 3 horas, identifique seu padrão financeiro.",
     subheadline:
-      "Workshop Raio-X do Ciclo Financeiro. Programa em 5 blocos, material de diagnóstico incluso, replay por 3 dias. Método Engrenagem da Repetição, construído a partir de psicanálise, tipologia junguiana e análise de perfil comportamental.",
+      "Se você tem entre 35 e 45 e trabalha por conta, vai aplicar uma estrutura de 6 etapas sobre uma situação real da sua vida e sair com um comportamento definido pra observar. Workshop Raio-X do Ciclo Financeiro, com programa em 5 blocos, material incluso e replay por 3 dias.",
     cta: "Ver o programa completo e garantir a vaga",
   },
   a3: {
-    headline:
-      "Coisas sobre dinheiro que talvez ninguém lá em casa tenha tido como te ensinar: em 3 horas, num sábado de manhã, você separa o que veio da sua origem do que é decisão sua hoje.",
+    headline: "Sua origem não precisa decidir seu destino.",
     subheadline:
-      "Workshop Raio-X do Ciclo Financeiro. Ao vivo pelo Zoom, com o método Engrenagem da Repetição. Sua origem explica parte da sua trajetória. Ela não precisa determinar o seu destino. Com Cezar Linzmeyer.",
+      "Existem coisas sobre dinheiro que talvez ninguém lá em casa tenha tido como te ensinar. Em 3 horas, num sábado de manhã, você separa o que veio da sua origem do que é decisão sua hoje. Workshop Raio-X do Ciclo Financeiro, ao vivo pelo Zoom.",
     cta: "Quero separar origem de destino",
   },
   a4: {
-    headline:
-      "Te ensinaram que dinheiro é questão de conta e de disciplina. Em 3 horas, você vai mapear a sequência que faz a conta certa produzir, ano após ano, o mesmo resultado errado.",
+    headline: "A conta certa ainda produz o resultado errado?",
     subheadline:
-      "Workshop Raio-X do Ciclo Financeiro. O método Engrenagem da Repetição parte de uma pergunta que quase ninguém faz: de onde vem aquilo que você acredita querer, e como você funciona pra decidir. Construído sobre psicanálise e tipologia junguiana, aplicado à vida financeira.",
+      "Te ensinaram que dinheiro é questão de conta e de disciplina. Em 3 horas, você vai mapear a sequência que faz a conta certa produzir, ano após ano, o mesmo resultado errado. Workshop Raio-X do Ciclo Financeiro, com o método Engrenagem da Repetição.",
     cta: "Quero testar essa tese na minha vida",
   },
 };
