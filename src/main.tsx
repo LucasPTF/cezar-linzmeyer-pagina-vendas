@@ -5,7 +5,7 @@ import "./styles.css";
 type HeroKey = "a1" | "a2" | "a3" | "a4";
 
 type HeroContent = {
-  headline: string;
+  headline: readonly [string, string, string];
   subheadline: string;
   cta: string;
 };
@@ -14,25 +14,25 @@ const CHECKOUT_URL = "";
 
 const heroContent: Record<HeroKey, HeroContent> = {
   a1: {
-    headline: "Trabalha muito, mas o dinheiro não sobra?",
+    headline: ["Trabalha muito,", "mas o dinheiro", "não sobra?"],
     subheadline:
       "Em 3 horas, num sábado de manhã, você vai mapear a engrenagem que te devolve no mesmo ponto todo ano e sair com o primeiro movimento definido. Workshop Raio-X do Ciclo Financeiro, ao vivo pelo Zoom, com material de diagnóstico e o método Engrenagem da Repetição.",
     cta: "Quero entender meu ciclo financeiro",
   },
   a2: {
-    headline: "Em 3 horas, identifique seu padrão financeiro.",
+    headline: ["Em 3 horas,", "identifique seu", "padrão financeiro."],
     subheadline:
       "Se você tem entre 35 e 45 e trabalha por conta, vai aplicar uma estrutura de 6 etapas sobre uma situação real da sua vida e sair com um comportamento definido pra observar. Workshop Raio-X do Ciclo Financeiro, com programa em 5 blocos, material incluso e replay por 3 dias.",
     cta: "Ver o programa completo e garantir a vaga",
   },
   a3: {
-    headline: "Sua origem não precisa decidir seu destino.",
+    headline: ["Sua origem", "não precisa decidir", "seu destino."],
     subheadline:
       "Existem coisas sobre dinheiro que talvez ninguém lá em casa tenha tido como te ensinar. Em 3 horas, num sábado de manhã, você separa o que veio da sua origem do que é decisão sua hoje. Workshop Raio-X do Ciclo Financeiro, ao vivo pelo Zoom.",
     cta: "Quero separar origem de destino",
   },
   a4: {
-    headline: "A conta certa ainda produz o resultado errado?",
+    headline: ["A conta certa", "ainda produz", "o resultado errado?"],
     subheadline:
       "Te ensinaram que dinheiro é questão de conta e de disciplina. Em 3 horas, você vai mapear a sequência que faz a conta certa produzir, ano após ano, o mesmo resultado errado. Workshop Raio-X do Ciclo Financeiro, com o método Engrenagem da Repetição.",
     cta: "Quero testar essa tese na minha vida",
@@ -249,7 +249,13 @@ function Hero({ content }: { content: HeroContent }) {
       <div className="hero-grid container" id="inicio">
         <div className="hero-copy">
           <p className="eyebrow hero-eyebrow">Workshop Raio-X do Ciclo Financeiro</p>
-          <h1>{content.headline}</h1>
+          <h1 aria-label={content.headline.join(" ")}>
+            {content.headline.map((line) => (
+              <span className="headline-line" aria-hidden="true" key={line}>
+                {line}
+              </span>
+            ))}
+          </h1>
           <p className="hero-subheadline">{content.subheadline}</p>
           <p className="support-line">Sem promessa de renda. Sem fórmula. Sem palco.</p>
           <CTA>{content.cta}</CTA>
